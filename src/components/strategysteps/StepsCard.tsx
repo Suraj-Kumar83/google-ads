@@ -21,7 +21,7 @@ const StepCard = ({ number, title, description, align }: StepCardProps) => {
   "
 >
 
-        <span className="text-[64px] font-semibold text-white/10 leading-none">
+        <span className="text-[64px] font-medium text-white/10 leading-none">
           {number}
         </span>
 

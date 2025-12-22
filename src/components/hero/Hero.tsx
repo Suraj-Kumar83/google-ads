@@ -15,17 +15,17 @@ const Hero = () => {
               <span className="block text-brandBlue text-[48px] lg:text-[56px]">
                 Maximize Your ROI
               </span>
-              <span className="block text-white text-[42px] lg:text-[52px] font-semibold">
+              <span className="block text-white text-[42px] lg:text-[52px] font-medium">
                 with #1 Google Ads
               </span>
-              <span className="block text-white text-[42px] lg:text-[52px] font-semibold">
+              <span className="block text-white text-[42px] lg:text-[52px] font-medium">
                 Agency
               </span>
             </h1>
 
             <p className="mt-6 text-gray-300">
               Officially certified as a{" "}
-              <span className="font-semibold text-white">
+              <span className="font-medium text-white">
                 Google Partner
               </span>
             </p>
@@ -72,7 +72,7 @@ const Hero = () => {
 
 const Stat = ({ title, subtitle }: { title: string; subtitle: string }) => (
   <div>
-    <p className="text-lg font-semibold text-white leading-none">
+    <p className="text-lg font-medium text-white leading-none">
       {title}
     </p>
     <p className="stat-label mt-1">

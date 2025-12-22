@@ -53,3 +53,129 @@ body {
   color: white;
   outline: none;
 }
+/* ===============================
+   NAV LINK – TEXT + HOVER EFFECT
+   =============================== */
+
+.nav-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px;
+  color: #ffffff99;
+  transition: color 0.3s ease;
+}
+
+/* ===== BLUE GLOW (SVG-equivalent) ===== */
+.nav-link::before {
+  content: "";
+  position: absolute;
+
+  /* exact dimensions */
+  width: 68.457px;
+  height: 7px;
+
+  /* exact positioning */
+  right: 12.26px;
+  bottom: -3px;
+
+  /* exact style */
+  background: #223cc3;
+  border-radius: 50%;
+  filter: blur(12.5px);
+
+  /* hidden by default */
+  opacity: 0;
+  transition: opacity 0.35s ease;
+
+  pointer-events: none;
+}
+
+/* ===== UNDERLINE ===== */
+.nav-link::after {
+  content: "";
+  position: absolute;
+
+  left: 12px;
+  right: 12px;
+  bottom: 0px;
+
+  height: 1px; /* thinner underline */
+  background-color: #ffffff;
+
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s ease;
+}
+
+/* ===== HOVER STATES ===== */
+.nav-link:hover {
+  color: #ffffff;
+}
+
+.nav-link:hover::before {
+  opacity: 1; 
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+/* ===============================
+   CTA BUTTON – VIDEO HOVER EFFECT
+   =============================== */
+
+.cta-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 24px;
+  border-radius: 9999px;
+
+  background: #ffffff;
+  color: #000000;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    color 0.3s ease;
+  overflow: hidden;
+}
+
+/* Glow layer */
+.cta-btn::before {
+  content: "";
+  position: absolute;
+
+  width: 60px;
+  height: 60px;
+
+  background: #223cc3;
+  border-radius: 50%;
+  filter: blur(18px);
+
+  opacity: 0;
+  transition: opacity 0.35s ease, transform 0.35s ease;
+
+  pointer-events: none;
+}
+
+/* Hover state */
+.cta-btn:hover {
+  background-color: #223cc3;
+  color: #ffffff;
+  transform: scale(1.06);
+}
+
+/* Show glow */
+.cta-btn:hover::before {
+  opacity: 1;
+  transform: scale(2.6);
+}

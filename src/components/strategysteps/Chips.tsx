@@ -26,7 +26,7 @@ const Chip = ({ text }: ChipProps) => {
           bg-[#131313BF]
           text-[#EDF5FF]
           text-[14px]
-          font-semibold
+          font-medium
           leading-[120%]
           whitespace-nowrap
         "

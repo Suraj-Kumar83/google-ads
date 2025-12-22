@@ -53,7 +53,7 @@ const StrategySection = () => {
           <h2
             className="
               text-3xl lg:text-5xl
-              font-semibold
+              font-medium
               leading-[1.15]
               tracking-[-1px]
               max-w-[720px]
@@ -85,7 +85,7 @@ const StrategySection = () => {
         bg-[#131313BF]
         text-[#EDF5FF]
         text-[16px]
-        font-semibold
+        font-medium
         leading-[1.2]
         transition
         bg-[#131313]

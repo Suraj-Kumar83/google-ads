@@ -1,6 +1,7 @@
 const HeroForm = () => {
   return (
     <div
+    
       className="
         flex flex-col items-start
         p-16 gap-16
@@ -10,7 +11,7 @@ const HeroForm = () => {
       "
     >
       {/* Title */}
-      <h3 className="text-2xl font-semibold">
+      <h3 className="text-2xl font-medium text-white">
         Get in Touch
       </h3>
 
@@ -37,7 +38,7 @@ const HeroForm = () => {
             mt-6 w-full
             bg-yellow-400 text-black
             py-3 rounded-lg
-            font-semibold
+            font-medium
             hover:bg-yellow-300
             transition
           "
