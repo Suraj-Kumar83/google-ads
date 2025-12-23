@@ -7,18 +7,41 @@ const FooterSection = () => {
       <div className="w-full max-w-[1440px] px-[80px] py-[80px] flex flex-col">
         <div className="flex flex-col lg:flex-row gap-[80px]">
           <div className="flex-1">
-            <h2 className="text-[48px] font-medium leading-[120%] text-[#EDF5FF]">
+            {/* H2 — Old/H3 */}
+            <h2
+              className="
+                w-[385px]
+                text-[#EDF5FF]
+                font-[Geist]
+                text-[64px]
+                font-medium
+                leading-[1.2]
+                tracking-[-1.92px]
+              "
+            >
               Let's Drive <br />
-              Your <span className="text-brandBlue">Growth</span> <br />
-              Together
+              Your <span className="text-brandBlue">Growth Together</span> <br />
+             
             </h2>
 
-            <p className="mt-6 text-[#A2A2A2] text-[14px] leading-[150%] max-w-[420px]">
+            {/* Paragraph — Old/P2 */}
+            <p
+              className="
+                mt-6
+                max-w-[420px]
+                text-[#CFCFCF]
+                font-[Geist]
+                text-[16px]
+                font-normal
+                leading-[1.5]
+              "
+            >
               If you have any questions or need any assistance during business
               hours please get in touch.
             </p>
-            <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm text-[#A2A2A2]">
 
+            {/* CONTACT GRID */}
+            <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6 text-[#A2A2A2] text-sm">
               <div>
                 <p className="text-white font-medium">Call on</p>
                 <p>+91 98765 43210</p>
@@ -40,44 +63,17 @@ const FooterSection = () => {
               <div>
                 <p className="text-white font-medium">Social Network</p>
 
-<div className="flex gap-4 mt-2 items-center">
-  <a
-    href="#"
-    aria-label="Facebook"
-    className="opacity-70 hover:opacity-100 transition"
-  >
-    <img
-      src="/assets/icon/Facebook.svg"
-      alt="Facebook"
-      className="w-5 h-5"
-    />
-  </a>
-
-  <a
-    href="#"
-    aria-label="Twitter / X"
-    className="opacity-70 hover:opacity-100 transition"
-  >
-    <img
-      src="/assets/icon/Twitter.svg"
-      alt="Twitter"
-      className="w-5 h-5"
-    />
-  </a>
-
-  <a
-    href="#"
-    aria-label="LinkedIn"
-    className="opacity-70 hover:opacity-100 transition"
-  >
-    <img
-      src="/assets/icon/LinkedIn.svg"
-      alt="LinkedIn"
-      className="w-5 h-5"
-    />
-  </a>
-</div>
-
+                <div className="flex gap-4 mt-2 items-center">
+                  <a href="#" className="opacity-70 hover:opacity-100 transition">
+                    <img src="/assets/icon/Facebook.svg" alt="Facebook" className="w-[20px] h-[20px]" />
+                  </a>
+                  <a href="#" className="opacity-70 hover:opacity-100 transition">
+                    <img src="/assets/icon/Twitter.svg" alt="Twitter" className="w-[20px] h-[20px]" />
+                  </a>
+                  <a href="#" className="opacity-70 hover:opacity-100 transition">
+                    <img src="/assets/icon/LinkedIn.svg" alt="LinkedIn" className="w-[20px] h-[20px]" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -87,15 +83,34 @@ const FooterSection = () => {
             <ContactForm />
           </div>
         </div>
+
         <div className="h-[64px]" />
+
+        {/* FOOTER BOTTOM */}
         <div className="flex flex-col lg:flex-row gap-[80px] pt-[64px] border-t border-white/10">
           <div className="flex-1">
             <img src={logo} alt="Bluvo Digital" className="w-[109px]" />
 
-            <p className="mt-4 text-[#A2A2A2] text-[14px] max-w-[320px]">
-              Let's collaborate to create something truly remarkable.
-            </p>
+            {/* Paragraph — Old/P2 */}
+           {/* Paragraph — Old/P2 */}
+<p
+  className="
+     text-[#4D9EFF]
+    font-[Geist]
+    text-[45px]
+    font-medium
+    leading-[1.2]
+    tracking-[-0.9px]
+  "
+>
+  <span className="text-[#4D9EFF]">Let's collaborate</span>{" "}
+  <span className="text-[#CFCFCF]">
+    to create<br/> something truly remarkable.
+  </span>
+</p>
+
           </div>
+
           <div className="flex gap-[80px]">
             <div>
               <p className="text-white font-medium mb-4">Quick Links</p>
@@ -119,7 +134,6 @@ const FooterSection = () => {
                 <li>UI/UX Designing</li>
               </ul>
             </div>
-
           </div>
         </div>
       </div>

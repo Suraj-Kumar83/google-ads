@@ -42,9 +42,9 @@ const StrategySection = () => {
           w-full max-w-[1440px]
           flex flex-col items-start
           min-h-[844px]
-          pt-20 px-6 pb-16
+          pt-10 px-6 pb-16
           gap-12
-          lg:pt-[90px] lg:px-[80px] lg:pb-[80px]
+          lg:pt-[56px] lg:px-[80px] lg:pb-[80px]
           lg:gap-[65px]
         "
       >
@@ -89,6 +89,10 @@ const StrategySection = () => {
         leading-[1.2]
         transition
         bg-[#131313]
+
+shadow-[0_0_40px_rgba(202,197,49,0.35),_0_0_80px_rgba(147,51,234,0.35)]
+
+    transition
       "
     >
       Start Your Campaign

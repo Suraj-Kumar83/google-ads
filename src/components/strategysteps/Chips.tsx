@@ -15,7 +15,7 @@ const Chip = ({ text }: ChipProps) => {
       "
       style={{
         background:
-          "linear-gradient(90deg, #CAC531 0%, rgba(77,158,255,0.25) 100%)",
+          "linear-gradient(90deg, #CAC531 -80%, rgba(77,158,255,0.25) 80%)",
       }}
     >
       <div

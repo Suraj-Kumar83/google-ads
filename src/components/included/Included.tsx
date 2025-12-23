@@ -39,9 +39,23 @@ const IncludedSection = () => {
             What’s <span className="text-brandBlue">Included</span>
           </h2>
 
-          <p className="mt-4 text-[#A2A2A2] text-[16px] leading-[150%] max-w-[520px] mx-auto">
-            Explore the key components and services included to achieve your goals.
-          </p>
+ <p
+  className="
+    mt-4
+    mx-auto
+    text-center
+    text-[#A2A2A2]
+    font-[Geist]
+    text-[23px]
+    font-normal
+    leading-[1.47]
+    whitespace-nowrap
+  "
+>
+  Explore the key components and services included to achieve your goals.
+</p>
+
+
         </div>
 
         {/* CARDS */}

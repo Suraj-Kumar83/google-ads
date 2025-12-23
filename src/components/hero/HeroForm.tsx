@@ -1,46 +1,113 @@
+import React from "react";
+
 const HeroForm = () => {
   return (
     <div
-    
       className="
         flex flex-col items-start
         p-16 gap-16
         rounded-2xl
         bg-white/5
         backdrop-blur-xl
+        w-[610px]
       "
     >
       {/* Title */}
-      <h3 className="text-2xl font-medium text-white">
+      <h3
+        className="
+          self-stretch
+          text-white
+          font-[Geist]
+          text-[45px]
+          font-medium
+          leading-[1.2]
+          tracking-[-0.9px]
+        "
+      >
         Get in Touch
       </h3>
 
       {/* Form */}
-      <form className="w-full flex flex-col gap-6">
-        <Input placeholder="Full name" />
-        <Input placeholder="Work email" />
-        <Input placeholder="Phone number" />
+      <form className="w-full flex flex-col">
+        {/* Inputs block */}
+        <div className="flex flex-col gap-6">
+           <Input
+    placeholder="Full name"
+    className="text-[16px]"
+  />
 
-        <select className="form-input">
-          <option>Select your monthly budget</option>
-          <option>$1k – $5k</option>
-          <option>$5k – $10k</option>
-          <option>$10k+</option>
-        </select>
+  <Input
+    placeholder="Work email"
+    className="text-[16px]"
+  />
 
-        <textarea
-          className="form-input h-24"
-          placeholder="Message"
-        />
+  <Input
+    placeholder="Phone number"
+    className="text-[16px]"
+  />
 
+          {/* Select */}
+          <select
+            className="
+              w-full
+              bg-transparent
+              border-0 border-b border-white/40
+              pb-3
+              outline-none
+              transition
+              text-white
+              font-[Geist]
+              text-[16px]
+              font-normal
+              leading-[1.57]
+            "
+          >
+            <option className="text-black">Select your monthly budget</option>
+            <option className="text-black">$1k – $5k</option>
+            <option className="text-black">$5k – $10k</option>
+            <option className="text-black">$10k+</option>
+          </select>
+
+          {/* Message */}
+          <textarea
+            placeholder="Message"
+            className="
+              w-full
+              h-24
+              resize-none
+              bg-transparent
+              border-0 border-b border-white/40
+              pb-3
+              outline-none
+              transition
+              text-white
+              font-[Geist]
+              text-[16px]
+              font-normal
+              leading-[1.57]
+              placeholder:text-white/60
+            "
+          />
+        </div>
+
+        {/* Submit */}
         <button
           className="
-            mt-6 w-full
-            bg-yellow-400 text-black
-            py-3 rounded-lg
-            font-medium
-            hover:bg-yellow-300
+            mt-16
+            flex
+            w-full
+            px-[40px] py-[20px]
+            justify-center items-center
+            rounded-[8px]
+            bg-[#FFEA4D]
+            shadow-[0_4px_100px_0_rgba(77,158,255,0.20)]
+            text-[#1B3759]
+            font-[Geist]
+            text-[16px]
+            font-semibold
+            leading-[1.2]
             transition
+            hover:opacity-90
           "
         >
           Submit
@@ -50,11 +117,33 @@ const HeroForm = () => {
   );
 };
 
-const Input = ({ placeholder }: { placeholder: string }) => (
-  <input
-    placeholder={placeholder}
-    className="form-input"
-  />
-);
+/* ============================= */
+/* Input Component (Underline)   */
+/* ============================= */
+
+type InputProps = React.InputHTMLAttributes<HTMLInputElement>;
+
+const Input = ({ className, ...props }: InputProps) => {
+  return (
+    <input
+      {...props}
+      className={`
+        w-full
+        bg-transparent
+        border-0 border-b border-white/40
+        pb-3
+        outline-none
+        transition
+        text-white
+        font-[Geist]
+        text-[12px]
+        font-normal
+        leading-[1.57]
+        placeholder:text-white/60
+        ${className ?? ""}
+      `}
+    />
+  );
+};
 
 export default HeroForm;

@@ -19,7 +19,7 @@ const StrategyCard = ({ icon, title, description }: StrategyCardProps) => {
       {/* ICON */}
       <div
         className="
-          w-10 h-10
+          w-[28px] h-[28px]
           flex items-center justify-center
           rounded-lg
           bg-white/10

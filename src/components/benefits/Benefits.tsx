@@ -21,15 +21,23 @@ const BenefitsSection = () => {
           items-start
         "
       >
-        {/* LEFT TITLE COLUMN */}
-        <div className="w-[320px] shrink-0">
-          <h3 className="text-[#EDF5FF] text-[32px] font-medium leading-[120%]">
-            Benefits of <br />
-            <span className="text-brandBlue">
-              Expert Google <br /> Ads Management
-            </span>
-          </h3>
-        </div>
+ {/* LEFT TITLE COLUMN */}
+<div className="w-[320px] shrink-0">
+  <h3
+    className="
+      text-white
+      font-[Geist]
+      text-[45px]
+      font-medium
+      leading-[1.2]
+      tracking-[-0.9px]
+    "
+  >
+    <span className="text-[#4D9EFF]">Benefits</span> of <br />
+    Expert Google <br /> Ads Management
+  </h3>
+</div>
+
 
         {/* RIGHT GRID */}
         <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-[40px] gap-x-[48px]">

@@ -24,12 +24,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Reusable form input */
-.form-input {
-  @apply w-full bg-transparent border-b border-gray-600 py-2
-    text-sm text-white placeholder-gray-400
-    outline-none focus:border-white;
+
+.form-typography {
+  @apply text-white font-[Geist] text-[12px] font-normal leading-[1.57];
 }
+
+
+
 .hero-heading {
   font-family: "Geist", system-ui, sans-serif;
   font-size: 64px;

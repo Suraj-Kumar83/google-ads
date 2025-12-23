@@ -11,7 +11,7 @@ const StrategyStepsSection = () => {
   <div className="relative w-full max-w-[1440px] lg:px-[40px]">
 
     {/* ================= HEADING (ISOLATED) ================= */}
-    <div className="pt-[80px] lg:pt-[160px] pb-[120px] text-center">
+    <div className="pt-[20px] lg:pt-[64px] pb-[120px] text-center">
       <h2
         className="
           text-[#EDF5FF]
@@ -25,19 +25,30 @@ const StrategyStepsSection = () => {
         <span className="text-brandBlue">Ads Success</span>
       </h2>
 
-      <p className="mt-4 text-[#A2A2A2] text-[16px] leading-[150%]">
-        Transform your Google Ads spend into significant profit
-      </p>
+      <p
+  className="
+    mt-4
+    text-center
+    text-[#A2A2A2]
+    font-[Geist]
+    text-[23px]
+    font-normal
+    leading-[1.47]
+  "
+>
+  Transform your Google Ads spend into significant profit
+</p>
+
     </div>
 
     {/* ================= STEPS (UNCHANGED FLOW) ================= */}
-    <div className="relative py-[120px] flex flex-col gap-[140px]">
+    <div className="relative py-[50px] flex flex-col gap-[120px]">
 
       {/* STEP 01 */}
       <div className="relative flex items-center justify-center pl-32">
         <Chip text="Here's How We Do It" />
 
-        <div className="-ml-0">
+        <div className="ml-0">
           <ChipLine />
         </div>
 
@@ -52,10 +63,10 @@ const StrategyStepsSection = () => {
       </div>
 
       {/* CONNECTOR 01 → 02 */}
-      <CurveRight className="top-[210px] left-[660px]" />
+      <CurveRight className="top-[120px] left-[660px]" />
 
       {/* STEP 02 */}
-      <div className="ml-[280px] mt-[-70px]">
+      <div className="ml-[360px] mt-[-70px]">
         <StepCard
           number="02"
           title="Detailed Review"
@@ -65,10 +76,10 @@ const StrategyStepsSection = () => {
       </div>
 
       {/* CONNECTOR 02 → 03 */}
-      <CurveLeft className="top-[410px] left-[230px]" />
+      <CurveLeft className="top-[320px] left-[250px]" />
 
       {/* STEP 03 */}
-      <div className="mt-[-60px] mr-[180px] flex justify-end">
+      <div className="mt-[-40px] mr-[200px] flex justify-end">
         <StepCard
           number="03"
           title="Plan and Fix"
@@ -78,7 +89,7 @@ const StrategyStepsSection = () => {
       </div>
 
       {/* CONNECTOR 03 → 04 */}
-      <CurveRightReverse className="top-[620px] left-[660px]" />
+      <CurveRightReverse className="top-[530px] left-[660px]" />
 
       {/* STEP 04 */}
       <div className="mt-[-60px] ml-[300px]">
