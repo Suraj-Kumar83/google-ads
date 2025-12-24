@@ -10,7 +10,7 @@ const BenefitItem = ({ icon, text }: BenefitItemProps) => {
         src={icon}
         alt=""
         aria-hidden
-        className="w-[72px] h-[72px] opacity-90"
+        className="w-[65px] h-[65px] opacity-90"
       />
 
       <p

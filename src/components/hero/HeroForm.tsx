@@ -35,17 +35,17 @@ const HeroForm = () => {
         <div className="flex flex-col gap-6">
            <Input
     placeholder="Full name"
-    className="text-[16px]"
+    className="text-[15px]"
   />
 
   <Input
     placeholder="Work email"
-    className="text-[16px]"
+    className="text-[15px]"
   />
 
   <Input
     placeholder="Phone number"
-    className="text-[16px]"
+    className="text-[15px]"
   />
 
     <select
@@ -59,7 +59,7 @@ const HeroForm = () => {
         outline-none
         transition
         font-[Geist]
-        text-[16px]
+        text-[15px]
         leading-[1.57]
 
         ${selected

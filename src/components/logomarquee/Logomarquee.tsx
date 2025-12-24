@@ -5,7 +5,7 @@ const logos = Array.from({ length: 12 }, (_, i) =>
 const LogoMarquee = () => {
   return (
     <div className="relative w-full overflow-hidden">
-<div className="pointer-events-none absolute inset-0 z-10 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] [--webkit-mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]" />
+    <div className="pointer-events-none absolute inset-0 z-10 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] [--webkit-mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]" />
       <div className="flex w-max animate-marquee gap-[5px]">
         {[...logos, ...logos].map((logo, index) => (
           <div

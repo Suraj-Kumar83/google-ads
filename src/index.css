@@ -180,3 +180,8 @@ body {
   opacity: 1;
   transform: scale(2.6);
 }
+.text-no-ligatures {
+  font-feature-settings: 'liga' off, 'clig' off;
+  leading-trim: both;
+  text-edge: cap;
+}

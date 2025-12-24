@@ -23,14 +23,14 @@ const Hero = () => {
               </span>
             </h1>
 
-            <p className="mt-6 text-gray-300">
+            <p className="mt-12 text-gray-300">
               Officially certified as a{" "}
               <span className="font-medium text-white">
                 Google Partner
               </span>
             </p>
 
-            <div className="mt-4">
+            <div className="mt-6 gap-24">
               <img
                 src="/assets/GooglePartner.png"
                 alt="Google Partner"
@@ -38,7 +38,7 @@ const Hero = () => {
               />
             </div>
 
-            <div className="flex gap-10 mt-10 text-sm">
+            <div className="flex gap-10 mt-10  text-[28px]">
               <Stat title="6+ Years" subtitle="of Experience" />
               <Divider />
               <Stat title="$10M+" subtitle="in Ad Spend Managed" />
