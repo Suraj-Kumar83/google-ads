@@ -1,11 +1,13 @@
 import React from "react";
+import { useState } from "react";
 
 const HeroForm = () => {
+   const [selected, setSelected] = useState("");
   return (
     <div
       className="
         flex flex-col items-start
-        p-16 gap-16
+        p-16 gap-3
         rounded-2xl
         bg-white/5
         backdrop-blur-xl
@@ -46,28 +48,32 @@ const HeroForm = () => {
     className="text-[16px]"
   />
 
-          {/* Select */}
-          <select
-            className="
-              w-full
-              bg-transparent
-              border-0 border-b border-white/40
-              pb-3
-              outline-none
-              transition
-              text-white
-              font-[Geist]
-              text-[16px]
-              font-normal
-              leading-[1.57]
-            "
-          >
-            <option className="text-black">Select your monthly budget</option>
-            <option className="text-black">$1k – $5k</option>
-            <option className="text-black">$5k – $10k</option>
-            <option className="text-black">$10k+</option>
-          </select>
+    <select
+      value={selected}
+      onChange={(e) => setSelected(e.target.value)}
+      className={`
+        w-full
+        bg-transparent
+        border-0 border-b
+        pb-3
+        outline-none
+        transition
+        font-[Geist]
+        text-[16px]
+        leading-[1.57]
 
+        ${selected
+          ? "text-white "
+          : "text-white/50 border-white/40"}
+      `}
+    >
+      <option value="" disabled className="text-black">
+        Select your monthly budget
+      </option>
+      <option className="text-black" value="1-5">$1k – $5k</option>
+      <option className="text-black" value="5-10">$5k – $10k</option>
+      <option className="text-black" value="10+">$10k+</option>
+    </select>
           {/* Message */}
           <textarea
             placeholder="Message"

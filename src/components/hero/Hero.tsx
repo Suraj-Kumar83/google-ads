@@ -10,7 +10,7 @@ const Hero = () => {
         <div className="max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-20 items-center">
 
           {/* LEFT CONTENT */}
-          <div className="max-w-[620px]">
+          <div className="max-w-[620px] mt-1">
             <h1 className="font-[500] leading-[1.15] tracking-[-1.5px]">
               <span className="block text-brandBlue text-[48px] lg:text-[56px]">
                 Maximize Your ROI
@@ -48,7 +48,11 @@ const Hero = () => {
           </div>
 
           {/* RIGHT FORM */}
-          <HeroForm />
+        {/* RIGHT FORM */}
+<div className="-ml-[10px]">
+  <HeroForm />
+</div>
+
         </div>
       </div>
 
@@ -58,7 +62,7 @@ const Hero = () => {
           className="
             flex items-center
             w-full max-w-[1440px]
-            p-20
+            p-2
             gap-[42px]
           "
         >

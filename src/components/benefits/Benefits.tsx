@@ -16,7 +16,7 @@ const BenefitsSection = () => {
       <div
         className="
           w-full max-w-[1440px]
-          px-[80px] py-[80px]
+          px-[80px] py-[100px]
           flex gap-[80px]
           items-start
         "

@@ -11,7 +11,7 @@ const StrategyStepsSection = () => {
   <div className="relative w-full max-w-[1440px] lg:px-[40px]">
 
     {/* ================= HEADING (ISOLATED) ================= */}
-    <div className="pt-[20px] lg:pt-[64px] pb-[120px] text-center">
+    <div className="pt-[20px] lg:pt-[6px] pb-[120px] text-center">
       <h2
         className="
           text-[#EDF5FF]
@@ -42,7 +42,7 @@ const StrategyStepsSection = () => {
     </div>
 
     {/* ================= STEPS (UNCHANGED FLOW) ================= */}
-    <div className="relative py-[50px] flex flex-col gap-[120px]">
+    <div className="relative mt-[-20px] flex flex-col gap-[120px]">
 
       {/* STEP 01 */}
       <div className="relative flex items-center justify-center pl-32">
@@ -63,7 +63,7 @@ const StrategyStepsSection = () => {
       </div>
 
       {/* CONNECTOR 01 → 02 */}
-      <CurveRight className="top-[120px] left-[660px]" />
+      <CurveRight className="top-[60px] left-[660px]" />
 
       {/* STEP 02 */}
       <div className="ml-[360px] mt-[-70px]">
@@ -76,7 +76,7 @@ const StrategyStepsSection = () => {
       </div>
 
       {/* CONNECTOR 02 → 03 */}
-      <CurveLeft className="top-[320px] left-[250px]" />
+      <CurveLeft className="top-[260px] left-[250px]" />
 
       {/* STEP 03 */}
       <div className="mt-[-40px] mr-[200px] flex justify-end">
@@ -89,7 +89,7 @@ const StrategyStepsSection = () => {
       </div>
 
       {/* CONNECTOR 03 → 04 */}
-      <CurveRightReverse className="top-[530px] left-[660px]" />
+      <CurveRightReverse className="top-[470px] left-[660px]" />
 
       {/* STEP 04 */}
       <div className="mt-[-60px] ml-[300px]">

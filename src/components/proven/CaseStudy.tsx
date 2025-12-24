@@ -27,15 +27,18 @@ const CaseStudyCard = ({
           overflow-hidden
           rounded-[16px]
           transition-all duration-300 ease-out
-          group-hover:w-[488px]
-          group-hover:h-[332px]
         "
       >
-        <img
-          src={image}
-          alt={title}
-          className="w-full h-full object-cover"
-        />
+      <img
+  src={image}
+  alt={title}
+  className="
+    w-full h-full object-cover
+    transition-transform duration-500 ease-out
+    group-hover:scale-105
+  "
+/>
+
       </div>
 
       {/* TEXT */}
@@ -72,7 +75,7 @@ const CaseStudyCard = ({
               text-[#A2A2A2]
               text-[16px]
               shrink-0
-              transition-all duration-300
+              transition-all duration-200
               group-hover:rounded-[50px]
               group-hover:border
               group-hover:border-[#CFCFCF]

@@ -17,14 +17,14 @@ const Header = () => {
 
         {/* Right side */}
         <div className="flex flex-1 justify-end items-center gap-8">
-   <nav className="hidden lg:flex items-center gap-8 text-sm">
+   {/* <nav className="hidden lg:flex items-center gap-8 text-sm">
   <Link to="/services" className="nav-link">Services</Link>
   <Link to="/about" className="nav-link">About</Link>
   <Link to="/case-studies" className="nav-link">Case Studies</Link>
   <Link to="/resources" className="nav-link">Resources</Link>
   <Link to="/blog" className="nav-link">Blog</Link>
-  <Link to="/contact" className="nav-link">Contact</Link>
-</nav>
+  <Link to="/contact" className="nav-link">Contact</Link> */}
+{/* </nav> */}
 
 <BullseyeButton
   to="/contact"

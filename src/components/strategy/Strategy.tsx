@@ -44,7 +44,7 @@ const StrategySection = () => {
           min-h-[844px]
           pt-10 px-6 pb-16
           gap-12
-          lg:pt-[56px] lg:px-[80px] lg:pb-[80px]
+          lg:pt-[70px] lg:px-[80px] lg:pb-[80px]
           lg:gap-[65px]
         "
       >

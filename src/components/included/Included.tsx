@@ -28,7 +28,7 @@ const IncludedSection = () => {
       <div
         className="
           w-full max-w-[1440px]
-          px-[80px] py-[80px]
+          px-[80px] py-[0px]
           flex flex-col
           items-center
         "

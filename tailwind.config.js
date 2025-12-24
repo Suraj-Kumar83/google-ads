@@ -34,7 +34,7 @@ export default {
         blobB: "blobB 38s ease-in-out infinite",
         marquee: "marquee 20s linear infinite",
       },
-    },
+  }
   },
   plugins: [],
 };
