@@ -13,23 +13,27 @@ const DiscoverItem = ({
     <div
       className="
         flex flex-col items-center
-        w-[400px]
-        p-[24px]
-        gap-[28px]
+        w-full lg:w-[400px]
+        p-[16px] sm:p-[20px] lg:p-[24px]
+        gap-[16px] sm:gap-[20px] lg:gap-[28px]
         rounded-[16px]
         bg-white/[0.02]
       "
     >
       {/* Icon */}
-      <img src={icon} alt="" className="w-[56px] h-[56px]" />
+      <img
+        src={icon}
+        alt=""
+        className="w-[40px] h-[40px] sm:w-[48px] sm:h-[48px] lg:w-[56px] lg:h-[56px]"
+      />
 
-      {/* Title — Old/H5 */}
+      {/* Title */}
       <h4
         className="
           text-center
           text-[#EDF5FF]
           font-[Geist]
-          text-[28px]
+          text-[18px] sm:text-[22px] lg:text-[28px]
           font-medium
           leading-[1.2]
           tracking-[-0.56px]
@@ -38,13 +42,13 @@ const DiscoverItem = ({
         {title}
       </h4>
 
-      {/* Description — Old/P2 */}
+      {/* Description */}
       <p
         className="
           text-center
           text-[#A2A2A2]
           font-[Geist]
-          text-[16px]
+          text-[14px] sm:text-[15px] lg:text-[16px]
           font-normal
           leading-[1.5]
         "
@@ -54,5 +58,6 @@ const DiscoverItem = ({
     </div>
   );
 };
+
 
 export default DiscoverItem;

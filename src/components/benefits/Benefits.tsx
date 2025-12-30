@@ -16,31 +16,41 @@ const BenefitsSection = () => {
       <div
         className="
           w-full max-w-[1440px]
-          px-[80px] py-[100px]
-          flex gap-[80px]
-          items-start
+          px-4 sm:px-6 lg:px-[80px]
+          py-12 sm:py-16 lg:py-[100px]
+          flex flex-col lg:flex-row
+          gap-10 lg:gap-[80px]
         "
       >
- {/* LEFT TITLE COLUMN */}
-<div className="w-[320px] shrink-0">
-  <h3
-    className="
-      text-white
-      font-[Geist]
-      text-[45px]
-      font-medium
-      leading-[1.2]
-      tracking-[-0.9px]
-    "
-  >
-    <span className="text-[#4D9EFF]">Benefits</span> of <br />
-    Expert Google <br /> Ads Management
-  </h3>
-</div>
-
+        {/* LEFT TITLE */}
+        <div className="w-full lg:w-[320px] shrink-0">
+          <h3
+            className="
+              text-white
+              text-[28px] sm:text-[36px] lg:text-[45px]
+              font-medium
+              leading-[1.2]
+              tracking-[-0.9px]
+              text-center lg:text-left
+            "
+          >
+            <span className="text-[#4D9EFF]">Benefits</span> of <br className="hidden lg:block" />
+            Expert Google <br className="hidden lg:block" /> Ads Management
+          </h3>
+        </div>
 
         {/* RIGHT GRID */}
-        <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-[40px] gap-x-[48px]">
+        <div
+          className="
+            flex-1
+            grid
+            grid-cols-2
+            sm:grid-cols-2
+            lg:grid-cols-3
+            gap-y-8 sm:gap-y-10
+            gap-x-6 sm:gap-x-10
+          "
+        >
           {benefits.map((item, index) => (
             <BenefitItem key={index} {...item} />
           ))}

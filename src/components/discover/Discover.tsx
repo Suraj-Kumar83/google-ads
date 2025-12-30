@@ -45,27 +45,53 @@ const DiscoverSection = () => {
       <div
         className="
           w-full max-w-[1440px]
-          px-[80px] py-[80px]
+          px-4 sm:px-6 lg:px-[80px]
+          py-8 sm:py-12 lg:py-[80px]
           flex flex-col
           items-center
         "
       >
         {/* HEADING */}
         <div className="text-center max-w-[720px]">
-          <h2 className="text-[#EDF5FF] text-[48px] font-medium leading-[120%]">
+          <h2
+            className="
+              text-[#EDF5FF]
+              text-[28px] sm:text-[36px] lg:text-[48px]
+              font-medium
+              leading-[120%]
+            "
+          >
             Discover the{" "}
             <span className="text-brandBlue">advantage</span> of
-            <br />
+            <br className="hidden sm:block" />
             personalized marketing mastery
           </h2>
 
-          <p className="mt-4 text-[#A2A2A2] text-[16px] leading-[150%]">
+          <p
+            className="
+              mt-4
+              text-[#A2A2A2]
+              text-[14px] sm:text-[15px] lg:text-[16px]
+              leading-[150%]
+            "
+          >
             Crafting your success with precision and passion
           </p>
         </div>
 
         {/* GRID */}
-        <div className="mt-[48px] w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-[72px] gap-x-[48px]">
+        <div
+          className="
+            mt-8 sm:mt-12 lg:mt-[48px]
+            w-full
+            grid
+            grid-cols-1
+            sm:grid-cols-2
+            lg:grid-cols-3
+            gap-y-8 sm:gap-y-12 lg:gap-y-[72px]
+            gap-x-6 sm:gap-x-10 lg:gap-x-[48px]
+          "
+        >
           {discoverItems.map((item, index) => (
             <DiscoverItem key={index} {...item} />
           ))}

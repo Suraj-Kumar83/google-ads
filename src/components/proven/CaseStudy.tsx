@@ -14,64 +14,63 @@ const CaseStudyCard = ({
       className="
         group
         flex flex-col items-start
-        w-[460px] h-[393px]
-        gap-[40px]
+        w-full sm:w-auto lg:w-[460px]
+        h-auto lg:h-[393px]
+        gap-6 sm:gap-8 lg:gap-[40px]
         cursor-pointer
       "
     >
-      {/* IMAGE */}
-      <div
-        className="
-          flex-[1_0_0]
-          self-stretch
-          overflow-hidden
-          rounded-[16px]
-          transition-all duration-300 ease-out
-        "
-      >
-      <img
-  src={image}
-  alt={title}
+    <div
   className="
-    w-full h-full object-cover
-    transition-transform duration-500 ease-out
-    group-hover:scale-105
+    w-full
+    h-[220px] sm:h-[260px]
+    lg:h-full
+    overflow-hidden
+    rounded-[16px]
+    transition-all duration-300 ease-out
   "
-/>
+>
+  <img
+    src={image}
+    alt={title}
+    className="
+      w-full h-full object-cover
+      transition-transform duration-500 ease-out
+      group-hover:scale-110
+      mt-3
+    "
+  />
+</div>
 
-      </div>
 
       {/* TEXT */}
       <div className="flex flex-col gap-[6px] w-full">
-        {/* TITLE + ARROW */}
         <div className="flex items-center justify-between w-full">
-          {/* Title */}
           <p
             className="
               flex-1
               text-[rgba(237,245,255,0.70)]
               font-[Geist]
-              text-[23px]
+              text-[18px] sm:text-[20px] lg:text-[23px]
               font-normal
               leading-[1.47]
-              whitespace-nowrap
+              whitespace-normal lg:whitespace-nowrap
               overflow-hidden
               text-ellipsis
               transition-colors duration-300
               group-hover:text-[#EDF5FF]
+            
             "
           >
             {title}
           </p>
 
-          {/* Arrow */}
           <span
             className="
               flex
               w-[24px] h-[24px]
               p-[4px]
               justify-center items-center
-              gap-[10px]
               text-[#A2A2A2]
               text-[16px]
               shrink-0
@@ -85,7 +84,6 @@ const CaseStudyCard = ({
           </span>
         </div>
 
-        {/* DESCRIPTION */}
         <p
           className="
             text-[rgba(207,207,207,0.60)]
@@ -96,10 +94,9 @@ const CaseStudyCard = ({
             capitalize
             transition-colors duration-300
             group-hover:text-[rgba(207,207,207,0.70)]
+            mt-1
           "
-          style={{
-            fontFeatureSettings: "'liga' off, 'clig' off",
-          }}
+          style={{ fontFeatureSettings: "'liga' off, 'clig' off" }}
         >
           {description}
         </p>

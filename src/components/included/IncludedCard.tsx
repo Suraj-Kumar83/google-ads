@@ -12,29 +12,30 @@ const IncludedCard = ({
   badge,
 }: IncludedCardProps) => {
   return (
-    <div
+   <div
       className="
         relative
         flex flex-col
-        gap-[24px]
-        p-[24px]
+        gap-[16px] sm:gap-[20px] lg:gap-[24px]
+        p-[16px] sm:p-[20px] lg:p-[24px]
         rounded-[16px]
         bg-white/[0.02]
       "
     >
       {/* Badge (Top Right) */}
 {badge && (
-  <div
-    className="
-      absolute top-4 right-0
-      inline-flex items-center
-      h-[56px]
-      pl-[7px] pr-[12px] py-[8px]
-      w-[120px]
-      bg-[rgba(77,158,255,0.20)]
-      shadow-[0_4px_70px_rgba(77,158,255,0.20)]
-    "
-  >
+ <div
+          className="
+            absolute top-4 right-0
+            inline-flex items-center
+            h-[56px]
+            pl-[7px] pr-[12px] py-[8px]
+            w-[120px]
+            bg-[rgba(77,158,255,0.20)]
+            shadow-[0_4px_70px_rgba(77,158,255,0.20)]
+          "
+        >
+
     {/* Left notch */}
     <span className="absolute left-[-27px] top-0 h-[80px] w-[22px]">
       <svg
@@ -82,14 +83,18 @@ const IncludedCard = ({
 
 
       {/* Icon */}
-      <img src={icon} alt="" className="w-[56px] h-[56px]" />
+       <img
+        src={icon}
+        alt=""
+        className="w-[40px] h-[40px] sm:w-[48px] sm:h-[48px] lg:w-[56px] lg:h-[56px]"
+      />
 
-      {/* Title — Old/H5 */}
-      <h4
+
+       <h4
         className="
           text-[#EDF5FF]
           font-[Geist]
-          text-[28px]
+          text-[18px] sm:text-[22px] lg:text-[28px]
           font-medium
           leading-[1.2]
           tracking-[-0.56px]
@@ -97,13 +102,12 @@ const IncludedCard = ({
       >
         {title}
       </h4>
-
       {/* Description */}
-      <p
+     <p
         className="
           text-[#CFCFCF]
           font-[Geist]
-          text-[11px]
+          text-[13px] sm:text-[14px] lg:text-[11px]
           font-normal
           leading-[1.57]
         "

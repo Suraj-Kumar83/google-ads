@@ -5,19 +5,23 @@ interface BenefitItemProps {
 
 const BenefitItem = ({ icon, text }: BenefitItemProps) => {
   return (
-    <div className="flex flex-col items-start gap-[28px]">
+    <div className="flex flex-col items-start gap-4 sm:gap-6">
       <img
         src={icon}
         alt=""
         aria-hidden
-        className="w-[65px] h-[65px] opacity-90"
+        className="
+          w-[48px] h-[48px]
+          sm:w-[56px] sm:h-[56px]
+          lg:w-[65px] lg:h-[65px]
+          opacity-90
+        "
       />
 
       <p
         className="
           text-[#EDF5FF]
-          font-[Geist]
-          text-[16px]
+          text-sm sm:text-[15px] lg:text-[16px]
           font-medium
           leading-[1.5]
         "
